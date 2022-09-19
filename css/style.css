@@ -1,0 +1,123 @@
+body {
+    background-color: #c54848;
+    font-family: "Outfit", sans-serif;
+    color: #c54848;
+    font-size: 16px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    width: 277px;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 3px 5px 10px black;
+    position: relative;
+    transition: all 1s ease;
+}
+
+/* hover */
+.card:hover {
+    box-shadow: 5px 10px 10px black;
+    position: relative;
+    top: -5px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 277px;
+    height: 291px;
+    object-fit: contain;
+    position: relative;
+    filter: blur(0);
+    transition: all 0.2 ease;
+}
+
+.eye {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    opacity: 0;
+}
+
+.description {
+    width: 277px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: rgb(41, 41, 41);
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.text-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-block p {
+    font-size: 15px;
+}
+
+.price {
+    color: #00aaaa;
+    font-weight: bold;
+}
+
+hr {
+    border-color: #c54848;
+    margin-bottom: 20px;
+    width: 277px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid;
+    padding-top: 16px;
+}
+
+.img-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.creator em {
+    font-weight: bold;
+}
+
+
+
+.img,
+h1,
+.creator em:hover {
+    cursor: pointer;
+}
+.img:hover .eye {
+    opacity: 1;
+}
+
+.img:hover .imgMario {
+    filter: blur(3px);
+}
+h1:hover {
+    color: #c54848;
+}
+
+.creator em:hover {
+    color: #581717;
+}
